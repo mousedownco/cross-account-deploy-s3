@@ -7,7 +7,7 @@ resource aws_codepipeline prod_deploy {
     location = aws_s3_bucket.pipeline_artifacts.bucket
 
     encryption_key {
-      id   = aws_kms_key.tools_s3.arn
+      id   = aws_kms_alias.tools_s3.arn
       type = "KMS"
     }
   }

@@ -20,7 +20,7 @@ data aws_iam_policy_document assume_deploy {
 }
 
 ###
-# tools-kms
+# tools-kms Policy
 # Provide access to the "tools" KMS key for decrypting codepipeline
 # artifacts stored in S3.
 data aws_iam_policy_document tools_kms {
